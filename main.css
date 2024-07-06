@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+    background: url('./images/image_pc.jpeg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.container{
+    backdrop-filter: blur(40px);
+    width: 25%;
+    border-radius: 10px;
+    border: 3px solid white;
+    font-family: "Inter", sans-serif;
+    position: relative;
+}
+textarea{
+    resize: none;
+}
+label{
+    cursor: pointer;
+}
+.text-green{
+    color: #21b16e;
+}
+.social-links{
+    position: absolute;
+    bottom: -70px;
+    right: 30px;
+}
+.social-links li{
+    list-style: none;
+}
+
+@media screen and (max-width: 1023px){
+    .container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 767px){
+    body{
+        background: url('./images/image_mobile.jpg');
+    }
+}
